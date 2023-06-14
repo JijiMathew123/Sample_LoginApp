@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -209,10 +209,14 @@
                     <connections>
                         <outlet property="brownView" destination="sbc-rg-eUU" id="HW8-cC-5OF"/>
                         <outlet property="containerView" destination="umL-fd-9Ic" id="767-mm-gIm"/>
+                        <outlet property="forgotLogin" destination="sHz-lS-RTi" id="ho6-BP-9bK"/>
                         <outlet property="innerTopContainer" destination="Mc2-vC-mVx" id="b8F-8Z-1N8"/>
+                        <outlet property="loginButton" destination="Kk3-ag-Rja" id="DOs-vY-3Q1"/>
                         <outlet property="loginButtonView" destination="ILh-qI-jMz" id="jVB-J7-x2i"/>
+                        <outlet property="password" destination="b8T-nA-9iv" id="B55-j0-hEW"/>
                         <outlet property="termsAndConditionsView" destination="Dvy-1f-m5w" id="19V-cW-Nly"/>
                         <outlet property="topContainer" destination="Cq9-rU-OsS" id="DJ3-Dd-bcY"/>
+                        <outlet property="userName" destination="Q78-pC-5k8" id="9Nh-rv-1S7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
