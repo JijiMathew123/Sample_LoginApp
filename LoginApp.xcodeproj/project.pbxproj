@@ -101,6 +101,7 @@
 		182129CD2A29A8900045951A /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				4BB3817E2A3185B700EF9986 /* view */,
 				182129CE2A29A8900045951A /* AppDelegate.swift */,
 				182129D02A29A8900045951A /* SceneDelegate.swift */,
 				182129D22A29A8900045951A /* ViewController.swift */,
@@ -128,6 +129,13 @@
 				182129F42A29A8920045951A /* LoginAppUITestsLaunchTests.swift */,
 			);
 			path = LoginAppUITests;
+			sourceTree = "<group>";
+		};
+		4BB3817E2A3185B700EF9986 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
