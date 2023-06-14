@@ -16,10 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var termsAndConditionsView: UIView!
     
     @IBOutlet weak var loginButtonView: UIView!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var forgotLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
-
-
+func setupLoginButton()
+    {
+        loginButton.layer.cornerRadius = 5.0
+    }
 }
 
