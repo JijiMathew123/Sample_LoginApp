@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var forgotLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoginButton()
     
     }
 func setupLoginButton()
@@ -29,6 +30,9 @@ func setupLoginButton()
         loginButton.layer.cornerRadius = 5.0
         // i am from Documents
         print("Hai")
+    }
+    func setupTextField(){
+        userName.text = "Jiji"
     }
 }
 
