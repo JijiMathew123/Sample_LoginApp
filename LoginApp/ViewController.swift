@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  LoginApp
-//
 //  Created by Apple on 02/06/23.
 //
 
@@ -22,17 +21,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var forgotLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        userName.addTarget(self, action: #selector(self.enableLoginButton), for: .editingChanged)
+        password.addTarget(self, action: #selector(self.enableLoginButton), for: .editingChanged)
         setupLoginButton()
     
     }
 func setupLoginButton()
     {
         loginButton.layer.cornerRadius = 5.0
-        // i am from Documents
-        print("Hai")
     }
-    func setupTextField(){
+func setupTextField(){
         userName.text = "Jiji"
+    }
+   @objc func enableLoginButton(){
+        loginButton.isEnabled = userName.text != "" && password.text != ""
     }
 }
 
