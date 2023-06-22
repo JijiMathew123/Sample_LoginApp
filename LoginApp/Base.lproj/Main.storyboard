@@ -145,6 +145,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="23"/>
                                                     <color key="baseForegroundColor" white="0.95009296440000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mad-YK-CBu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.92893276084847998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -226,7 +229,7 @@
         <!--Second View Controller-->
         <scene sceneID="QV6-cD-o89">
             <objects>
-                <viewController id="I0k-9t-8nX" customClass="SecondViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="I0k-9t-8nX" customClass="SecondViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CtH-KT-og7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,6 +248,9 @@
                             <constraint firstItem="Mz9-L3-Yyq" firstAttribute="centerY" secondItem="CtH-KT-og7" secondAttribute="centerY" id="X4g-1n-ipc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Mz9-L3-Yyq" id="NLN-wJ-1Kv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="St5-lX-wAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

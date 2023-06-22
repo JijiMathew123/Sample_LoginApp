@@ -8,8 +8,10 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var messageLabel: UILabel!
+    let userName = NetworkService.shared.userData
     override func viewDidLoad() {
         super.viewDidLoad()
+        messageLabel.text = "Welcom \(userName?.name)"
     }
 }

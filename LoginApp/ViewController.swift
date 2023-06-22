@@ -26,15 +26,36 @@ class ViewController: UIViewController {
         setupLoginButton()
     
     }
-func setupLoginButton()
+    
+    @IBAction func loginButtonClicked(_ sender: Any) {
+        NetworkService.shared.login(username: userName.text!, password: password.text!) { success in
+            if(success)
+            {
+                self.goToHomePage()
+            }
+            else{
+                print(" Please check the username and pwd")
+            }
+        }
+        
+    }
+    func goToHomePage(){
+        let controller = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        present(controller, animated: true, completion: nil)
+    }
+    
+    func setupLoginButton()
     {
         loginButton.layer.cornerRadius = 5.0
     }
+    
 func setupTextField(){
         userName.text = "Jiji"
     }
-   @objc func enableLoginButton(){
+    
+@objc func enableLoginButton(){
         loginButton.isEnabled = userName.text != "" && password.text != ""
     }
+    
 }
 
