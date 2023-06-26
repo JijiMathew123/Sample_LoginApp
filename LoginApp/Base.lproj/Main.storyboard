@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hqu-1g-il0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -206,22 +206,40 @@
                             <constraint firstItem="sHz-lS-RTi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="x0i-wC-gy1"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="brownView" destination="sbc-rg-eUU" id="HW8-cC-5OF"/>
-                        <outlet property="containerView" destination="umL-fd-9Ic" id="767-mm-gIm"/>
-                        <outlet property="forgotLogin" destination="sHz-lS-RTi" id="ho6-BP-9bK"/>
-                        <outlet property="innerTopContainer" destination="Mc2-vC-mVx" id="b8F-8Z-1N8"/>
-                        <outlet property="loginButton" destination="Kk3-ag-Rja" id="DOs-vY-3Q1"/>
-                        <outlet property="loginButtonView" destination="ILh-qI-jMz" id="jVB-J7-x2i"/>
-                        <outlet property="password" destination="b8T-nA-9iv" id="B55-j0-hEW"/>
-                        <outlet property="termsAndConditionsView" destination="Dvy-1f-m5w" id="19V-cW-Nly"/>
-                        <outlet property="topContainer" destination="Cq9-rU-OsS" id="DJ3-Dd-bcY"/>
-                        <outlet property="userName" destination="Q78-pC-5k8" id="9Nh-rv-1S7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="455.07246376811599" y="-227.67857142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lwy-At-b3r">
+            <objects>
+                <viewController id="Hqu-1g-il0" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIo-Lh-MEr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bIA-5k-vLg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mxo-uG-eW6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bIA-5k-vLg" firstAttribute="top" secondItem="Mxo-uG-eW6" secondAttribute="top" id="A8h-aF-m0g"/>
+                            <constraint firstItem="bIA-5k-vLg" firstAttribute="bottom" secondItem="Mxo-uG-eW6" secondAttribute="bottom" id="Dok-Oa-srV"/>
+                            <constraint firstItem="bIA-5k-vLg" firstAttribute="leading" secondItem="Mxo-uG-eW6" secondAttribute="leading" id="coA-5R-qgI"/>
+                            <constraint firstItem="Mxo-uG-eW6" firstAttribute="trailing" secondItem="bIA-5k-vLg" secondAttribute="trailing" id="ugo-4k-BDt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="bIA-5k-vLg" id="g6T-ba-hnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXM-NW-gxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463.768115942029" y="-212.27678571428569"/>
         </scene>
     </scenes>
     <resources>
